@@ -1,0 +1,11 @@
+services:
+  client:
+    build: .
+    container_name: client_app
+    ports:
+      - "5001:5001"
+    volumes:
+      - clientvol:/clientdata
+
+volumes:
+  clientvol:
