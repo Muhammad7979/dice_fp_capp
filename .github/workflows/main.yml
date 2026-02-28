@@ -34,6 +34,7 @@ jobs:
         key: ${{ secrets.EC2_PRIVATE_KEY_CLIENT }}
         port: 22 
         script: |
+          mkdir -p ~/client
           docker rm -f dice_client || true
           docker pull muhammad0897979/dice_project_client_app:latest
           docker run -d \
