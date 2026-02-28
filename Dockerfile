@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir flask requests
 RUN mkdir -p /clientdata
 
 # Expose port 5001
-EXPOSE 5001
+EXPOSE 5000
 
 # Run Flask client app
 CMD ["python", "client.py"]

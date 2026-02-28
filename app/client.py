@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 
-# Replace this with your server's IP or domain
-SERVER_URL = "http://192.168.165.134:5000/data"  
+# Read server URL from environment variable, fallback for local testing
+SERVER_URL = os.environ["SERVER_URL"]
 
 DATA_DIR = "/clientdata"
 FILE_PATH = f"{DATA_DIR}/received.txt"
@@ -98,4 +98,5 @@ def fetch_data():
         return jsonify({"message": f"Error connecting to server: {e}"})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    # Run on port 5000 now
+    app.run(host="0.0.0.0", port=5000)
