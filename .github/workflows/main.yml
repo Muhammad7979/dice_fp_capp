@@ -41,7 +41,7 @@ jobs:
             --name dice_client \
             -p 5000:5000 \
             -v clientvol:/clientdata \
-            -e SERVER_URL="http://3.239.79.118:5000/data" \
+            -e SERVER_URL="http://10.0.1.131:5000/data" \
             muhammad0897979/dice_project_client_app:latest
 
 
