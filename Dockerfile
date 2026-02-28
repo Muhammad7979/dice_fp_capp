@@ -13,7 +13,7 @@ RUN apt-get update && \
         && rm -rf /var/lib/apt/lists/*
 
 # Copy client app
-COPY /app /client-app/
+COPY /app /client-app
 
 # Install required Python packages
 RUN pip install --no-cache-dir flask requests

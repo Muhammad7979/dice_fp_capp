@@ -40,7 +40,7 @@ HOME_HTML = """
     </style>
 </head>
 <body>
-    <h1>Client App</h1>
+    <h1>Client App testing</h1>
     <p>Click the button to fetch data from the server and verify checksum:</p>
     <button onclick="fetchData()">Fetch Data</button>
     <div id="output"></div>
